@@ -1,11 +1,17 @@
-def centuryFromYear(year):
-    rem =  year%100
-    quo =  int(year/100)
-    if(rem == 0):
-        print(quo)
-        return quo
-    else:
-        print(quo)
-        return quo + 1
-        
-centuryFromYear(1905)  
+#Palindrome Using Lists
+
+
+def checkPalindrome(inputString):
+    length = len(inputString)
+    inputlist = list(inputString)
+    isPalindrome = False
+    for i in range(0,length):
+      if inputlist[i] == inputlist[length-1]:
+        isPalindrome = True
+        print(isPalindrome)
+      else:
+        isPalindrome = False
+        print(isPalindrome)
+          
+
+checkPalindrome("abblnfbba")   
